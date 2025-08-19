@@ -10,7 +10,6 @@ interface Params {
 }
 
 const Page = async ({ params }: { params: Promise<Params> }) => {
-  // Espera a que se resuelva params
   const { id } = await params;
 
   // Traer película
